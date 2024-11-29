@@ -1,0 +1,46 @@
+{
+  "name": "Gabut Download Manager",
+  "description": "Integration for Gabut Download Manager.",
+  "short_name": "GabutDM",
+  "homepage_url": "https://github.com/gabutakut/gabutextentionsGC",
+  "version": "2.6.2",
+  "manifest_version": 3,
+  "icons": {
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.svg"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "Ctrl+Shift+Y": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Ctrl+Shift+Y"
+    },
+    "Ctrl+Shift+E": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "mac": "Command+Shift+E"
+      },
+      "description": "Ctrl+Shift+E"
+    }
+  },
+  "action": {
+    "default_title": "Gabut Menu",
+    "default_icon": "icons/icon_32.png",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "downloads",
+    "storage",
+    "tabs",
+    "webRequest",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"]
+}
