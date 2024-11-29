@@ -19,9 +19,6 @@ This repository contains some stuff.
 
 ## Usage
 
-```
-```
-
 ## Features
 
 ## Documentation
